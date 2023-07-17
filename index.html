@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Day 40</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:rgba(74, 8, 197, 0.418);
+            
+        }
+        img{
+            width: 150px;
+            height: 135px;
+            cursor: pointer;
+            transition: 1s;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        h1{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+        @keyframes im1 {
+            0%,100%{
+                position: relative;
+                z-index: 1;
+            }
+            30%,70%{
+                position: relative;
+                top: 140px;
+                left: 155px;
+                scale: 3.1;
+                z-index: 1;
+            }
+        }
+        @keyframes im2 {
+            0%,100%{
+                position: relative;
+                z-index: 1;
+            }
+            30%,70%{
+                position: relative;
+                top: 140px;
+                left: 0px;
+                scale: 3.1;
+                z-index: 1;
+            }
+        }
+        @keyframes im3 {
+            0%,100%{
+                position: relative;
+                z-index: 1;
+            }
+            30%,70%{
+                position: relative;
+                top: 140px;
+                left: -155px;
+                scale: 3.1;
+                z-index: 1;
+            }
+        }
+        @keyframes im4 {
+            0%,100%{
+                position: relative;
+                z-index: 1;
+            }
+            30%,70%{
+                position: relative;
+                top: 0px;
+                left: 155px;
+                scale: 3.1;
+                z-index: 1;
+            }
+        }
+        @keyframes im5 {
+            0%,100%{
+                position: relative;
+                z-index: 1;
+            }
+            30%,70%{
+                position: relative;
+                top: 0px;
+                left: 0px;
+                scale: 3.1;
+                z-index: 1;
+            }
+        }
+        @keyframes im6 {
+            0%,100%{
+                position: relative;
+                z-index: 1;
+            }
+            30%,70%{
+                position: relative;
+                top: 0px;
+                left: -155px;
+                scale: 3.1;
+                z-index: 1;
+            }
+        }
+        @keyframes im7 {
+            0%,100%{
+                position: relative;
+                z-index: 1;
+            }
+            30%,70%{
+                position: relative;
+                top: -140px;
+                left: 155px;
+                scale: 3.1;
+                z-index: 1;
+            }
+        }
+        @keyframes im8 {
+            0%,100%{
+                position: relative;
+                z-index: 1;
+            }
+            30%,70%{
+                position: relative;
+                top: -140px;
+                left: 0px;
+                scale: 3.1;
+                z-index: 1;
+            }
+        }
+        @keyframes im9 {
+            0%,100%{
+                position: relative;
+                z-index: 1;
+            }
+            30%,70%{
+                position: relative;
+                top: -140px;
+                left: -155px;
+                scale: 3.1;
+                z-index: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>CSS DAY 40</h1>
+        <div>
+            <img src="one c1.jpeg" alt="" id="a1" onclick="ab1()">
+            <img src="im2.webp" alt="" id="a2" onclick="ab2()">
+            <img src="im3.jpg" alt="" id="a3" onclick="ab3()">
+        </div>
+        <div>
+            <img src="im4.jpg" alt="" id="a4" onclick="ab4()">
+            <img src="im5.jpg" alt="" id="a5" onclick="ab5()">
+            <img src="im6.webp" alt="" id="a6" onclick="ab6()">
+        </div>
+        <div>
+            <img src="im7.webp" alt="" id="a7" onclick="ab7()">
+            <img src="im8.jpg" alt="" id="a8" onclick="ab8()">
+            <img src="im9.jpeg" alt="" id="a9" onclick="ab9()">
+        </div>
+    </div>
+</body>
+
+<script>
+    // $("#a1").on("click",function(){
+    //     $("#a1").animate({
+    //         width:200px
+    //     })
+    // })
+    
+    function ab1(){
+    let b1 = document.getElementById("a1")
+    b1.style.animationName="im1"
+    b1.style.animationDuration="3s"
+    }
+    function ab2(){
+    let b2 = document.getElementById("a2")
+    b2.style.animationName="im2"
+    b2.style.animationDuration="3s"
+    }
+    function ab3(){
+    let b3 = document.getElementById("a3")
+    b3.style.animationName="im3"
+    b3.style.animationDuration="3s"
+    }
+    function ab4(){
+    let b4 = document.getElementById("a4")
+    b4.style.animationName="im4"
+    b4.style.animationDuration="3s"
+    }
+    function ab5(){
+    let b5 = document.getElementById("a5")
+    b5.style.animationName="im5"
+    b5.style.animationDuration="3s"
+    }
+    function ab6(){
+    let b6 = document.getElementById("a6")
+    b6.style.animationName="im6"
+    b6.style.animationDuration="3s"
+    }
+    function ab7(){
+    let b7 = document.getElementById("a7")
+    b7.style.animationName="im7"
+    b7.style.animationDuration="3s"
+    }
+    function ab8(){
+    let b8 = document.getElementById("a8")
+    b8.style.animationName="im8"
+    b8.style.animationDuration="3s"
+    }
+    function ab9(){
+    let b9 = document.getElementById("a9")
+    b9.style.animationName="im9"
+    b9.style.animationDuration="3s"
+    }
+</script>
+</html>
